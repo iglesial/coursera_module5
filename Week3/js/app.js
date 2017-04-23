@@ -26,7 +26,7 @@
                item = response.data.menu_items[i]; 
                 if(response.data.menu_items[i].description.toLowerCase().includes(searchTerm.toLowerCase())){
                    narrow.found.push(item);
-               };
+                };
 
            };
            console.log(narrow);
