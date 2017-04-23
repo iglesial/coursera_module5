@@ -24,7 +24,7 @@
                var item ={};
           for (var i = 0; i < response.data.menu_items.length; i++) {   
                item = response.data.menu_items[i]; 
-                if(response.data.menu_items[i].description.includes(searchTerm)){
+                if(response.data.menu_items[i].description.toLowerCase().includes(searchTerm.toLowerCase())){
                    narrow.found.push(item);
                  };
 
